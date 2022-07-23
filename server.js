@@ -16,7 +16,7 @@ app.use(koaBody({
 app.use(cors({
   origin: '*',
   credentials: true,
-  'Access-Control-Allow-Origin': 'http://localhost:3000/ra-6.2-lifecycle_http-crud-frontend',
+  'Access-Control-Allow-Origin': true,
   allowMethods: ['GET', 'POST', 'DELETE'],
 }));
 
