@@ -13,12 +13,7 @@ app.use(koaBody({
   json: true,
 }));
 
-app.use(cors({
-  origin: '*',
-  credentials: true,
-  'Access-Control-Allow-Origin': true,
-  allowMethods: ['GET'],
-}));
+app.use(cors());
 
 app.use(router());
 
