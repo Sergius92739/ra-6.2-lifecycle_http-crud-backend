@@ -10,7 +10,7 @@
   "author": "Sergius92739",
   "license": "MIT",
   "dependencies": {
-    "@koa/cors": "^3.1.0",
+    "koa2-cors": "^2.0.6",
     "http-event-stream": "^0.2.0",
     "koa": "^2.13.3",
     "koa-body": "^4.2.0",
