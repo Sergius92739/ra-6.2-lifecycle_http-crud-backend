@@ -13,7 +13,12 @@ app.use(koaBody({
   json: true,
 }));
 
-app.use(cors());
+app.use(cors({
+  origin: ['http://localhost:3000', 'https://sergius92739.github.io/ra-6.2-lifecycle_http-crud-frontend/'],
+  credentials: true,
+  'Access-Control-Allow-Origin': true,
+  allowMethods: ['GET', 'POST', 'DELETE', 'OPTIONS'],
+}));
 
 app.use(router());
 
